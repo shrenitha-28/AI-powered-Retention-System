@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Churn Prediction</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="badge">
+            <i class="fa-solid fa-brain"></i>
+            AI Powered Analytics
+        </div>
+
+        <h1>Customer Churn Prediction</h1>
+
+        <p>
+            Predict customer churn using Machine Learning by providing
+            customer profile and billing information.
+        </p>
+
+    </section>
+
+    <!-- ================= FORM START ================= -->
+
+    <form action="/" method="POST" id="predictionForm">
+
+    <!-- ================= BILLING INFORMATION ================= -->
+
+    <div class="card">
+
+        <div class="card-header">
+
+            <div class="icon billing-icon">
+
+                <i class="fa-solid fa-dollar-sign"></i>
+
+            </div>
+
+            <div>
+
+                <h2>Billing Information</h2>
+
+                <p>Financial metrics affecting customer churn</p>
+
+            </div>
+
+        </div>
+
+        <div class="grid3">
+
+            <div class="input-group">
+
+                <label>Total Charges</label>
+
+                <div class="input-box">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="TotalCharges"
+                        name="TotalCharges"
+                        placeholder="Enter Total Charges"
+                        required>
+
+                    <span>$</span>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Tenure</label>
+
+                <div class="input-box">
+
+                    <input
+                        type="number"
+                        id="Tenure"
+                        name="Tenure"
+                        placeholder="Months"
+                        required>
+
+                    <span>mo</span>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Monthly Charges</label>
+
+                <div class="input-box">
+
+                    <input
+                        type="number"
+                        step="any"
+                        id="MonthlyCharges"
+                        name="MonthlyCharges"
+                        placeholder="Monthly Charges"
+                        required>
+
+                    <span>$</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= CUSTOMER PROFILE ================= -->
+
+    <div class="card">
+
+        <div class="card-header">
+
+            <div class="icon customer-icon">
+
+                <i class="fa-solid fa-user-gear"></i>
+
+            </div>
+
+            <div>
+
+                <h2>Customer Profile</h2>
+
+                <p>Customer demographic information</p>
+
+            </div>
+
+        </div>
+
+        <div class="grid3">
+
+            <div class="select-group">
+
+                <label>Senior Citizen</label>
+
+                <select id="SeniorCitizen" name="SeniorCitizen">
+
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Partner</label>
+
+                <select id="Partner" name="Partner">
+
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Dependents</label>
+
+                <select id="Dependents" name="Dependents">
+
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Paperless Billing</label>
+
+                <select id="PaperlessBilling" name="PaperlessBilling">
+
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Multiple Lines</label>
+
+                <select id="MultipleLines" name="MultipleLines">
+
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+
+                </select>
+
+            </div>
+                        <div class="select-group">
+
+                <label>Internet Service</label>
+
+                <select id="InternetService" name="InternetService">
+
+                    <option value="DSL">DSL</option>
+                    <option value="Fiber Optic">Fiber Optic</option>
+                    <option value="No">No</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Online Security</label>
+
+                <select id="OnlineSecurity" name="OnlineSecurity">
+
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Online Backup</label>
+
+                <select id="OnlineBackup" name="OnlineBackup">
+
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Device Protection</label>
+
+                <select id="DeviceProtection" name="DeviceProtection">
+
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Tech Support</label>
+
+                <select id="TechSupport" name="TechSupport">
+
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Streaming TV</label>
+
+                <select id="StreamingTV" name="StreamingTV">
+
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Streaming Movies</label>
+
+                <select id="StreamingMovies" name="StreamingMovies">
+
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Payment Method</label>
+
+                <select id="PaymentMethod" name="PaymentMethod">
+
+                    <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Electronic Check">Electronic Check</option>
+                    <option value="Mailed Check">Mailed Check</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>SIM</label>
+
+                <select id="SIM" name="SIM">
+
+                    <option value="Airtel">Airtel</option>
+                    <option value="BSNL">BSNL</option>
+                    <option value="Jio">Jio</option>
+                    <option value="Vodafone">Vodafone</option>
+
+                </select>
+
+            </div>
+
+            <div class="select-group">
+
+                <label>Contract</label>
+
+                <select id="Contract" name="Contract">
+
+                    <option value="Month-to-month">Month-to-month</option>
+                    <option value="One year">One year</option>
+                    <option value="Two year">Two year</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Hidden Fields -->
+
+    <input type="hidden" name="MultipleLines_Yes" id="MultipleLines_Yes">
+
+    <input type="hidden" name="InternetService_Fiber_optic" id="InternetService_Fiber_optic">
+    <input type="hidden" name="InternetService_No" id="InternetService_No">
+
+    <input type="hidden" name="OnlineSecurity_No_internet_service" id="OnlineSecurity_No_internet_service">
+    <input type="hidden" name="OnlineSecurity_Yes" id="OnlineSecurity_Yes">
+
+    <input type="hidden" name="OnlineBackup_No_internet_service" id="OnlineBackup_No_internet_service">
+    <input type="hidden" name="OnlineBackup_Yes" id="OnlineBackup_Yes">
+
+    <input type="hidden" name="DeviceProtection_No_internet_service" id="DeviceProtection_No_internet_service">
+    <input type="hidden" name="DeviceProtection_Yes" id="DeviceProtection_Yes">
+
+    <input type="hidden" name="TechSupport_No_internet_service" id="TechSupport_No_internet_service">
+    <input type="hidden" name="TechSupport_Yes" id="TechSupport_Yes">
+
+    <input type="hidden" name="StreamingTV_No_internet_service" id="StreamingTV_No_internet_service">
+    <input type="hidden" name="StreamingTV_Yes" id="StreamingTV_Yes">
+
+    <input type="hidden" name="StreamingMovies_No_internet_service" id="StreamingMovies_No_internet_service">
+    <input type="hidden" name="StreamingMovies_Yes" id="StreamingMovies_Yes">
+
+    <input type="hidden" name="PaymentMethod_Credit_card" id="PaymentMethod_Credit_card">
+    <input type="hidden" name="PaymentMethod_Electronic_check" id="PaymentMethod_Electronic_check">
+    <input type="hidden" name="PaymentMethod_Mailed_check" id="PaymentMethod_Mailed_check">
+
+    <input type="hidden" name="SIM_BSNL" id="SIM_BSNL">
+    <input type="hidden" name="SIM_Jio" id="SIM_Jio">
+    <input type="hidden" name="SIM_Vodafone" id="SIM_Vodafone">
+
+    <input type="hidden" name="Contract_res" id="Contract_res">
+            <!-- ================= BUTTON ================= -->
+
+    <div class="button-section">
+
+        <button type="submit" id="predictBtn">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            Predict Churn
+
+        </button>
+
+        <p>
+            Click the button to predict whether the customer is likely to churn.
+        </p>
+
+    </div>
+
+    <!-- ================= Prediction Card ================= -->
+
+    {% if prediction %}
+
+    <div class="result-container">
+
+        <div class="prediction-card">
+
+            <div class="card-header">
+
+                <div class="icon billing-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>Prediction Result</h2>
+
+                    <p>Machine Learning Prediction</p>
+
+                </div>
+
+            </div>
+
+            {% if "NOT" in prediction %}
+
+            <h1 style="color:#16a34a;">
+                {{ prediction }}
+            </h1>
+
+            {% else %}
+
+            <h1 style="color:#dc2626;">
+                {{ prediction }}
+            </h1>
+
+            {% endif %}
+
+            {% if probability %}
+
+            <h3 style="margin-top:20px;color:#555;">
+                Churn Probability :
+                <span style="color:#ff6247;">
+                    {{ probability }}%
+                </span>
+            </h3>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+    </form>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

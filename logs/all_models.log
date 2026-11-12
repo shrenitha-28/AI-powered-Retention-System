@@ -1,0 +1,18 @@
+2026-08-01 14:37:26,372 - INFO - Final Logistic Regression Model
+2026-08-01 14:37:26,375 - INFO - Accuracy:0.7530163236337828
+2026-08-01 14:37:26,376 - INFO - 
+Confusion Matrix:
+2026-08-01 14:37:26,379 - INFO - [[768 288]
+ [ 60 293]]
+2026-08-01 14:37:26,379 - INFO - 
+Classification Report:
+2026-08-01 14:37:26,397 - INFO -               precision    recall  f1-score   support
+
+           0       0.93      0.73      0.82      1056
+           1       0.50      0.83      0.63       353
+
+    accuracy                           0.75      1409
+   macro avg       0.72      0.78      0.72      1409
+weighted avg       0.82      0.75      0.77      1409
+
+2026-08-01 14:37:26,397 - INFO - =======Saving the Model===================

@@ -1,0 +1,24 @@
+'''
+In this file we are going to write the log code
+'''
+
+import logging
+import sys
+
+def setup_logging(script_name): # script_name = main
+    try:
+        logger = logging.getLogger(script_name)
+        if not logger.handlers:
+            logger.setLevel(logging.DEBUG)  # Debug | info | error | warning | critical
+            # Create a file handler for the script
+            handler = logging.FileHandler(f'C:\\Users\\91911\\Downloads\\PythonProject\\logs{script_name}.log', mode='w')
+            formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+            handler.setFormatter(formatter)
+            logger.addHandler(handler)
+            logger.propagate = False
+
+        return logger
+
+    except Exception as e:
+        er_type, er_msg, er_line = sys.exc_info()
+        logger.info(f"Error in line no : {er_line.tb_lineno} due to : {er_msg}")

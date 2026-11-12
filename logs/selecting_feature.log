@@ -1,0 +1,14 @@
+2026-08-01 14:37:17,579 - INFO - Initially X_train:(5634, 3), 
+ X_test:(1409, 3)
+2026-08-01 14:37:17,579 - INFO - The columns are: Index(['TotalCharges', 'Tenure', 'MonthlyCharges'], dtype='str')
+2026-08-01 14:37:17,583 - INFO - The bad columns are: Index([], dtype='str')
+2026-08-01 14:37:17,586 - INFO - The bad columns are: Index([], dtype='str')
+2026-08-01 14:37:17,588 - INFO - Feature: TotalCharges, Correlation: -0.2197469658716582, P-value: 1.4250797384248932e-62
+2026-08-01 14:37:17,589 - INFO - Feature: Tenure, Correlation: -0.35346658406287357, P-value: 1.8120014659071595e-165
+2026-08-01 14:37:17,591 - INFO - Feature: MonthlyCharges, Correlation: 0.1733257122947954, P-value: 3.032287290549617e-39
+2026-08-01 14:37:17,737 - INFO - Feature: TotalCharges, Mutual Information Score: 0.03880283950420371
+2026-08-01 14:37:17,738 - INFO - Feature: Tenure, Mutual Information Score: 0.06288379516061116
+2026-08-01 14:37:17,738 - INFO - Feature: MonthlyCharges, Mutual Information Score: 0.044914015500041815
+2026-08-01 14:37:19,057 - INFO - Feature: TotalCharges, Importance: 0.3814859959204964
+2026-08-01 14:37:19,057 - INFO - Feature: Tenure, Importance: 0.2171372063781972
+2026-08-01 14:37:19,057 - INFO - Feature: MonthlyCharges, Importance: 0.4013767977013064

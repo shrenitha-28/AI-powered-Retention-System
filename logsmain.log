@@ -1,0 +1,718 @@
+2026-08-08 12:34:29,909 - INFO - The size of the dataset is:(7043, 22)
+2026-08-08 12:34:29,946 - INFO - The first 5 rows are:
+   customerID  gender  SeniorCitizen Partner Dependents  ...              PaymentMethod MonthlyCharges TotalCharges Churn       SIM
+0  7590-VHVEG  Female              0     Yes         No  ...           Electronic check          29.85        29.85    No       Jio
+1  5575-GNVDE    Male              0      No         No  ...               Mailed check          56.95       1889.5    No      BSNL
+2  3668-QPYBK    Male              0      No         No  ...               Mailed check          53.85       108.15   Yes      BSNL
+3  7795-CFOCW    Male              0      No         No  ...  Bank transfer (automatic)          42.30      1840.75    No  Vodafone
+4  9237-HQITU  Female              0      No         No  ...           Electronic check          70.70       151.65   Yes    Airtel
+
+[5 rows x 22 columns]
+2026-08-08 12:34:29,951 - INFO - The values of SIM for each category:
+SIM
+Jio         1761
+BSNL        1761
+Airtel      1761
+Vodafone    1760
+Name: count, dtype: int64
+2026-08-08 12:34:29,982 - INFO - The first 5 rows are:
+   customerID  gender SeniorCitizen Partner Dependents  ...              PaymentMethod MonthlyCharges TotalCharges Churn       SIM
+0  7590-VHVEG  Female            No     Yes         No  ...           Electronic check          29.85        29.85     0       Jio
+1  5575-GNVDE    Male            No      No         No  ...               Mailed check          56.95       1889.5     0      BSNL
+2  3668-QPYBK    Male            No      No         No  ...               Mailed check          53.85       108.15     1      BSNL
+3  7795-CFOCW    Male            No      No         No  ...  Bank transfer (automatic)          42.30      1840.75     0  Vodafone
+4  9237-HQITU  Female            No      No         No  ...           Electronic check          70.70       151.65     1    Airtel
+
+[5 rows x 22 columns]
+2026-08-08 12:34:29,982 - INFO - The data types of the columns are:
+2026-08-08 12:34:29,982 - INFO - customerID
+2026-08-08 12:34:29,982 - INFO - str
+2026-08-08 12:34:29,982 - INFO - gender
+2026-08-08 12:34:29,982 - INFO - str
+2026-08-08 12:34:29,982 - INFO - SeniorCitizen
+2026-08-08 12:34:29,982 - INFO - str
+2026-08-08 12:34:29,982 - INFO - Partner
+2026-08-08 12:34:29,983 - INFO - str
+2026-08-08 12:34:29,983 - INFO - Dependents
+2026-08-08 12:34:29,983 - INFO - str
+2026-08-08 12:34:29,983 - INFO - tenure
+2026-08-08 12:34:29,983 - INFO - int64
+2026-08-08 12:34:29,983 - INFO - PhoneService
+2026-08-08 12:34:29,983 - INFO - str
+2026-08-08 12:34:29,983 - INFO - MultipleLines
+2026-08-08 12:34:29,983 - INFO - str
+2026-08-08 12:34:29,983 - INFO - InternetService
+2026-08-08 12:34:29,983 - INFO - str
+2026-08-08 12:34:29,983 - INFO - OnlineSecurity
+2026-08-08 12:34:29,983 - INFO - str
+2026-08-08 12:34:29,983 - INFO - OnlineBackup
+2026-08-08 12:34:29,983 - INFO - str
+2026-08-08 12:34:29,984 - INFO - DeviceProtection
+2026-08-08 12:34:29,984 - INFO - str
+2026-08-08 12:34:29,984 - INFO - TechSupport
+2026-08-08 12:34:29,984 - INFO - str
+2026-08-08 12:34:29,984 - INFO - StreamingTV
+2026-08-08 12:34:29,984 - INFO - str
+2026-08-08 12:34:29,984 - INFO - StreamingMovies
+2026-08-08 12:34:29,984 - INFO - str
+2026-08-08 12:34:29,984 - INFO - Contract
+2026-08-08 12:34:29,984 - INFO - str
+2026-08-08 12:34:29,984 - INFO - PaperlessBilling
+2026-08-08 12:34:29,984 - INFO - str
+2026-08-08 12:34:29,984 - INFO - PaymentMethod
+2026-08-08 12:34:29,984 - INFO - str
+2026-08-08 12:34:29,984 - INFO - MonthlyCharges
+2026-08-08 12:34:29,984 - INFO - float64
+2026-08-08 12:34:29,985 - INFO - TotalCharges
+2026-08-08 12:34:29,985 - INFO - str
+2026-08-08 12:34:29,985 - INFO - Churn
+2026-08-08 12:34:29,985 - INFO - int64
+2026-08-08 12:34:29,985 - INFO - SIM
+2026-08-08 12:34:29,985 - INFO - str
+2026-08-08 12:34:29,986 - INFO - The size of the dataset is:(7043, 21)
+2026-08-08 12:34:30,004 - INFO - The first 5 rows are:
+   gender SeniorCitizen Partner Dependents  tenure  ...              PaymentMethod MonthlyCharges TotalCharges Churn       SIM
+0  Female            No     Yes         No       1  ...           Electronic check          29.85        29.85     0       Jio
+1    Male            No      No         No      34  ...               Mailed check          56.95       1889.5     0      BSNL
+2    Male            No      No         No       2  ...               Mailed check          53.85       108.15     1      BSNL
+3    Male            No      No         No      45  ...  Bank transfer (automatic)          42.30      1840.75     0  Vodafone
+4  Female            No      No         No       2  ...           Electronic check          70.70       151.65     1    Airtel
+
+[5 rows x 21 columns]
+2026-08-08 12:34:30,005 - INFO - The no.of columns in X is:(7043, 20)
+2026-08-08 12:34:30,005 - INFO - The no.of columns in y is:(7043,)
+2026-08-08 12:34:30,015 - INFO - The shape of X_train is:(5634, 20)
+2026-08-08 12:34:30,015 - INFO - The shape of X_test is:(1409, 20)
+2026-08-08 12:34:30,015 - INFO - The shape of y_train is:(5634,)
+2026-08-08 12:34:30,015 - INFO - The shape of y_test is:(1409,)
+2026-08-08 12:34:30,015 - INFO - The data types of the columns are:
+2026-08-08 12:34:30,015 - INFO - gender
+2026-08-08 12:34:30,015 - INFO - Train:str
+2026-08-08 12:34:30,016 - INFO - Test:str
+2026-08-08 12:34:30,016 - INFO - SeniorCitizen
+2026-08-08 12:34:30,016 - INFO - Train:str
+2026-08-08 12:34:30,016 - INFO - Test:str
+2026-08-08 12:34:30,016 - INFO - Partner
+2026-08-08 12:34:30,016 - INFO - Train:str
+2026-08-08 12:34:30,016 - INFO - Test:str
+2026-08-08 12:34:30,016 - INFO - Dependents
+2026-08-08 12:34:30,017 - INFO - Train:str
+2026-08-08 12:34:30,017 - INFO - Test:str
+2026-08-08 12:34:30,017 - INFO - tenure
+2026-08-08 12:34:30,017 - INFO - Train:int64
+2026-08-08 12:34:30,017 - INFO - Test:int64
+2026-08-08 12:34:30,017 - INFO - PhoneService
+2026-08-08 12:34:30,017 - INFO - Train:str
+2026-08-08 12:34:30,017 - INFO - Test:str
+2026-08-08 12:34:30,018 - INFO - MultipleLines
+2026-08-08 12:34:30,018 - INFO - Train:str
+2026-08-08 12:34:30,018 - INFO - Test:str
+2026-08-08 12:34:30,018 - INFO - InternetService
+2026-08-08 12:34:30,018 - INFO - Train:str
+2026-08-08 12:34:30,018 - INFO - Test:str
+2026-08-08 12:34:30,018 - INFO - OnlineSecurity
+2026-08-08 12:34:30,018 - INFO - Train:str
+2026-08-08 12:34:30,018 - INFO - Test:str
+2026-08-08 12:34:30,019 - INFO - OnlineBackup
+2026-08-08 12:34:30,019 - INFO - Train:str
+2026-08-08 12:34:30,019 - INFO - Test:str
+2026-08-08 12:34:30,019 - INFO - DeviceProtection
+2026-08-08 12:34:30,020 - INFO - Train:str
+2026-08-08 12:34:30,020 - INFO - Test:str
+2026-08-08 12:34:30,020 - INFO - TechSupport
+2026-08-08 12:34:30,020 - INFO - Train:str
+2026-08-08 12:34:30,020 - INFO - Test:str
+2026-08-08 12:34:30,020 - INFO - StreamingTV
+2026-08-08 12:34:30,021 - INFO - Train:str
+2026-08-08 12:34:30,021 - INFO - Test:str
+2026-08-08 12:34:30,021 - INFO - StreamingMovies
+2026-08-08 12:34:30,021 - INFO - Train:str
+2026-08-08 12:34:30,021 - INFO - Test:str
+2026-08-08 12:34:30,021 - INFO - Contract
+2026-08-08 12:34:30,021 - INFO - Train:str
+2026-08-08 12:34:30,022 - INFO - Test:str
+2026-08-08 12:34:30,022 - INFO - PaperlessBilling
+2026-08-08 12:34:30,022 - INFO - Train:str
+2026-08-08 12:34:30,022 - INFO - Test:str
+2026-08-08 12:34:30,022 - INFO - PaymentMethod
+2026-08-08 12:34:30,022 - INFO - Train:str
+2026-08-08 12:34:30,022 - INFO - Test:str
+2026-08-08 12:34:30,022 - INFO - MonthlyCharges
+2026-08-08 12:34:30,022 - INFO - Train:float64
+2026-08-08 12:34:30,022 - INFO - Test:float64
+2026-08-08 12:34:30,022 - INFO - TotalCharges
+2026-08-08 12:34:30,023 - INFO - Train:str
+2026-08-08 12:34:30,023 - INFO - Test:str
+2026-08-08 12:34:30,023 - INFO - SIM
+2026-08-08 12:34:30,023 - INFO - Train:str
+2026-08-08 12:34:30,023 - INFO - Test:str
+2026-08-08 12:34:30,026 - INFO - The data type of TotalCharges is:float64
+2026-08-08 12:34:30,026 - INFO - The data type of TotalCharges is:float64
+2026-08-08 12:34:30,026 - INFO - =====Before Handling=========
+2026-08-08 12:34:30,026 - INFO - =========Train data details===========
+2026-08-08 12:34:30,026 - INFO - (5634, 20)
+2026-08-08 12:34:30,030 - INFO - gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        11
+SIM                  0
+dtype: int64
+2026-08-08 12:34:30,030 - INFO - =========Test data details===========
+2026-08-08 12:34:30,030 - INFO - (1409, 20)
+2026-08-08 12:34:30,031 - INFO - gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+SIM                 0
+dtype: int64
+2026-08-08 12:34:30,107 - INFO - =====After Handling=========
+2026-08-08 12:34:30,107 - INFO - =========Train data details===========
+2026-08-08 12:34:30,107 - INFO - (5634, 20)
+2026-08-08 12:34:30,110 - INFO - gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+SIM                 0
+dtype: int64
+2026-08-08 12:34:30,111 - INFO - =========Test data details===========
+2026-08-08 12:34:30,111 - INFO - (1409, 20)
+2026-08-08 12:34:30,112 - INFO - gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+SIM                 0
+dtype: int64
+2026-08-08 12:34:30,113 - INFO - The data types of the columns are:
+2026-08-08 12:34:30,113 - INFO - gender
+2026-08-08 12:34:30,113 - INFO - Train:str
+2026-08-08 12:34:30,113 - INFO - Test:str
+2026-08-08 12:34:30,113 - INFO - SeniorCitizen
+2026-08-08 12:34:30,113 - INFO - Train:str
+2026-08-08 12:34:30,113 - INFO - Test:str
+2026-08-08 12:34:30,113 - INFO - Partner
+2026-08-08 12:34:30,113 - INFO - Train:str
+2026-08-08 12:34:30,113 - INFO - Test:str
+2026-08-08 12:34:30,114 - INFO - Dependents
+2026-08-08 12:34:30,114 - INFO - Train:str
+2026-08-08 12:34:30,114 - INFO - Test:str
+2026-08-08 12:34:30,114 - INFO - tenure
+2026-08-08 12:34:30,114 - INFO - Train:int64
+2026-08-08 12:34:30,114 - INFO - Test:int64
+2026-08-08 12:34:30,114 - INFO - PhoneService
+2026-08-08 12:34:30,114 - INFO - Train:str
+2026-08-08 12:34:30,114 - INFO - Test:str
+2026-08-08 12:34:30,114 - INFO - MultipleLines
+2026-08-08 12:34:30,114 - INFO - Train:str
+2026-08-08 12:34:30,114 - INFO - Test:str
+2026-08-08 12:34:30,114 - INFO - InternetService
+2026-08-08 12:34:30,114 - INFO - Train:str
+2026-08-08 12:34:30,114 - INFO - Test:str
+2026-08-08 12:34:30,114 - INFO - OnlineSecurity
+2026-08-08 12:34:30,114 - INFO - Train:str
+2026-08-08 12:34:30,115 - INFO - Test:str
+2026-08-08 12:34:30,115 - INFO - OnlineBackup
+2026-08-08 12:34:30,115 - INFO - Train:str
+2026-08-08 12:34:30,115 - INFO - Test:str
+2026-08-08 12:34:30,115 - INFO - DeviceProtection
+2026-08-08 12:34:30,115 - INFO - Train:str
+2026-08-08 12:34:30,115 - INFO - Test:str
+2026-08-08 12:34:30,115 - INFO - TechSupport
+2026-08-08 12:34:30,115 - INFO - Train:str
+2026-08-08 12:34:30,115 - INFO - Test:str
+2026-08-08 12:34:30,115 - INFO - StreamingTV
+2026-08-08 12:34:30,115 - INFO - Train:str
+2026-08-08 12:34:30,115 - INFO - Test:str
+2026-08-08 12:34:30,115 - INFO - StreamingMovies
+2026-08-08 12:34:30,115 - INFO - Train:str
+2026-08-08 12:34:30,115 - INFO - Test:str
+2026-08-08 12:34:30,115 - INFO - Contract
+2026-08-08 12:34:30,115 - INFO - Train:str
+2026-08-08 12:34:30,115 - INFO - Test:str
+2026-08-08 12:34:30,115 - INFO - PaperlessBilling
+2026-08-08 12:34:30,116 - INFO - Train:str
+2026-08-08 12:34:30,116 - INFO - Test:str
+2026-08-08 12:34:30,116 - INFO - PaymentMethod
+2026-08-08 12:34:30,116 - INFO - Train:str
+2026-08-08 12:34:30,116 - INFO - Test:str
+2026-08-08 12:34:30,116 - INFO - MonthlyCharges
+2026-08-08 12:34:30,116 - INFO - Train:float64
+2026-08-08 12:34:30,116 - INFO - Test:float64
+2026-08-08 12:34:30,116 - INFO - TotalCharges
+2026-08-08 12:34:30,116 - INFO - Train:float64
+2026-08-08 12:34:30,116 - INFO - Test:float64
+2026-08-08 12:34:30,117 - INFO - SIM
+2026-08-08 12:34:30,117 - INFO - Train:str
+2026-08-08 12:34:30,117 - INFO - Test:str
+2026-08-08 12:34:30,118 - INFO - =========Train data details===========
+2026-08-08 12:34:30,118 - INFO - Train Numerical columns : 3 : 
+ : Index(['tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str')
+2026-08-08 12:34:30,119 - INFO - Train Categorical columns : 17 : 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'SIM'],
+      dtype='str')
+2026-08-08 12:34:30,119 - INFO - =========Test data details===========
+2026-08-08 12:34:30,119 - INFO - Test Numerical columns : 3 : 
+ : Index(['tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str')
+2026-08-08 12:34:30,119 - INFO - Test Categorical columns : 17 : 
+ : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'SIM'],
+      dtype='str')
+2026-08-08 12:34:30,119 - INFO - Before VT Outlier...
+2026-08-08 12:34:30,119 - INFO - (5634, 3)
+2026-08-08 12:34:30,119 - INFO - (1409, 3)
+2026-08-08 12:34:30,542 - INFO - After VT Outlier...
+2026-08-08 12:34:30,542 - INFO - (5634, 3)
+2026-08-08 12:34:30,542 - INFO - (1409, 3)
+2026-08-08 12:34:30,542 - INFO - Before Feature Selection...
+2026-08-08 12:34:30,543 - INFO - (5634, 3)
+2026-08-08 12:34:30,543 - INFO - (1409, 3)
+2026-08-08 12:34:31,183 - INFO - After Feature Selection...
+2026-08-08 12:34:31,183 - INFO - (5634, 3)
+2026-08-08 12:34:31,183 - INFO - (1409, 3)
+2026-08-08 12:34:31,183 - INFO - Before Encoding...
+2026-08-08 12:34:31,183 - INFO - (5634, 17)
+2026-08-08 12:34:31,184 - INFO - The data types of X_train_cat is:gender              str
+SeniorCitizen       str
+Partner             str
+Dependents          str
+PhoneService        str
+MultipleLines       str
+InternetService     str
+OnlineSecurity      str
+OnlineBackup        str
+DeviceProtection    str
+TechSupport         str
+StreamingTV         str
+StreamingMovies     str
+Contract            str
+PaperlessBilling    str
+PaymentMethod       str
+SIM                 str
+dtype: object
+2026-08-08 12:34:31,184 - INFO - (1409, 17)
+2026-08-08 12:34:31,185 - INFO - The data types of X_test_cat is:gender              str
+SeniorCitizen       str
+Partner             str
+Dependents          str
+PhoneService        str
+MultipleLines       str
+InternetService     str
+OnlineSecurity      str
+OnlineBackup        str
+DeviceProtection    str
+TechSupport         str
+StreamingTV         str
+StreamingMovies     str
+Contract            str
+PaperlessBilling    str
+PaymentMethod       str
+SIM                 str
+dtype: object
+2026-08-08 12:34:31,289 - INFO - After Encoding...
+2026-08-08 12:34:31,289 - INFO - (5634, 29)
+2026-08-08 12:34:31,290 - INFO - The data types of X_train_cat is:gender                                     int64
+SeniorCitizen                              int64
+Partner                                    int64
+Dependents                                 int64
+PhoneService                               int64
+PaperlessBilling                           int64
+MultipleLines_No phone service           float64
+MultipleLines_Yes                        float64
+InternetService_Fiber optic              float64
+InternetService_No                       float64
+OnlineSecurity_No internet service       float64
+OnlineSecurity_Yes                       float64
+OnlineBackup_No internet service         float64
+OnlineBackup_Yes                         float64
+DeviceProtection_No internet service     float64
+DeviceProtection_Yes                     float64
+TechSupport_No internet service          float64
+TechSupport_Yes                          float64
+StreamingTV_No internet service          float64
+StreamingTV_Yes                          float64
+StreamingMovies_No internet service      float64
+StreamingMovies_Yes                      float64
+PaymentMethod_Credit card (automatic)    float64
+PaymentMethod_Electronic check           float64
+PaymentMethod_Mailed check               float64
+SIM_BSNL                                 float64
+SIM_Jio                                  float64
+SIM_Vodafone                             float64
+Contract_res                             float64
+dtype: object
+2026-08-08 12:34:31,290 - INFO - (1409, 29)
+2026-08-08 12:34:31,291 - INFO - The data types of X_test_cat is:gender                                     int64
+SeniorCitizen                              int64
+Partner                                    int64
+Dependents                                 int64
+PhoneService                               int64
+PaperlessBilling                           int64
+MultipleLines_No phone service           float64
+MultipleLines_Yes                        float64
+InternetService_Fiber optic              float64
+InternetService_No                       float64
+OnlineSecurity_No internet service       float64
+OnlineSecurity_Yes                       float64
+OnlineBackup_No internet service         float64
+OnlineBackup_Yes                         float64
+DeviceProtection_No internet service     float64
+DeviceProtection_Yes                     float64
+TechSupport_No internet service          float64
+TechSupport_Yes                          float64
+StreamingTV_No internet service          float64
+StreamingTV_Yes                          float64
+StreamingMovies_No internet service      float64
+StreamingMovies_Yes                      float64
+PaymentMethod_Credit card (automatic)    float64
+PaymentMethod_Electronic check           float64
+PaymentMethod_Mailed check               float64
+SIM_BSNL                                 float64
+SIM_Jio                                  float64
+SIM_Vodafone                             float64
+Contract_res                             float64
+dtype: object
+2026-08-08 12:34:31,291 - INFO - Before Feature Selection...
+2026-08-08 12:34:31,291 - INFO - (5634, 29)
+2026-08-08 12:34:31,291 - INFO - (1409, 29)
+2026-08-08 12:34:32,470 - INFO - After Feature Selection...
+2026-08-08 12:34:32,470 - INFO - (5634, 26)
+2026-08-08 12:34:32,470 - INFO - (1409, 26)
+2026-08-08 12:34:32,470 - INFO - After combining numerical and categorical features
+2026-08-08 12:34:32,470 - INFO - X_train Shape : (5634, 29)
+2026-08-08 12:34:32,471 - INFO - X_test Shape : (1409, 29)
+2026-08-08 12:34:32,471 - INFO - X_train Columns:
+Index(['TotalCharges', 'Tenure', 'MonthlyCharges', 'SeniorCitizen', 'Partner',
+       'Dependents', 'PaperlessBilling', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SIM_BSNL', 'SIM_Jio', 'SIM_Vodafone', 'Contract_res'],
+      dtype='str')
+2026-08-08 12:34:32,471 - INFO - X_test Columns:
+Index(['TotalCharges', 'Tenure', 'MonthlyCharges', 'SeniorCitizen', 'Partner',
+       'Dependents', 'PaperlessBilling', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SIM_BSNL', 'SIM_Jio', 'SIM_Vodafone', 'Contract_res'],
+      dtype='str')
+2026-08-08 12:34:32,472 - INFO - TotalCharges                             0
+Tenure                                   0
+MonthlyCharges                           0
+SeniorCitizen                            0
+Partner                                  0
+Dependents                               0
+PaperlessBilling                         0
+MultipleLines_Yes                        0
+InternetService_Fiber optic              0
+InternetService_No                       0
+OnlineSecurity_No internet service       0
+OnlineSecurity_Yes                       0
+OnlineBackup_No internet service         0
+OnlineBackup_Yes                         0
+DeviceProtection_No internet service     0
+DeviceProtection_Yes                     0
+TechSupport_No internet service          0
+TechSupport_Yes                          0
+StreamingTV_No internet service          0
+StreamingTV_Yes                          0
+StreamingMovies_No internet service      0
+StreamingMovies_Yes                      0
+PaymentMethod_Credit card (automatic)    0
+PaymentMethod_Electronic check           0
+PaymentMethod_Mailed check               0
+SIM_BSNL                                 0
+SIM_Jio                                  0
+SIM_Vodafone                             0
+Contract_res                             0
+dtype: int64
+2026-08-08 12:34:32,473 - INFO - TotalCharges                             0
+Tenure                                   0
+MonthlyCharges                           0
+SeniorCitizen                            0
+Partner                                  0
+Dependents                               0
+PaperlessBilling                         0
+MultipleLines_Yes                        0
+InternetService_Fiber optic              0
+InternetService_No                       0
+OnlineSecurity_No internet service       0
+OnlineSecurity_Yes                       0
+OnlineBackup_No internet service         0
+OnlineBackup_Yes                         0
+DeviceProtection_No internet service     0
+DeviceProtection_Yes                     0
+TechSupport_No internet service          0
+TechSupport_Yes                          0
+StreamingTV_No internet service          0
+StreamingTV_Yes                          0
+StreamingMovies_No internet service      0
+StreamingMovies_Yes                      0
+PaymentMethod_Credit card (automatic)    0
+PaymentMethod_Electronic check           0
+PaymentMethod_Mailed check               0
+SIM_BSNL                                 0
+SIM_Jio                                  0
+SIM_Vodafone                             0
+Contract_res                             0
+dtype: int64
+2026-08-08 12:34:32,474 - INFO - No.of Good Columns:1516
+2026-08-08 12:34:32,474 - INFO - No.of Bad Columns:4118
+2026-08-08 12:34:32,474 - INFO - (5634,)
+2026-08-08 12:34:32,474 - INFO - Before ROS
+2026-08-08 12:34:32,474 - INFO - (5634, 29)
+2026-08-08 12:34:32,474 - INFO - ====Before ROS training======
+2026-08-08 12:34:32,474 - INFO - TotalCharges
+2026-08-08 12:34:32,475 - INFO - TotalCharges
+ 2.697060    20
+-2.273052    19
+-2.696655    18
+-2.119668     8
+-1.674186     7
+             ..
+ 0.161926     1
+ 1.322570     1
+-0.669120     1
+-0.910835     1
+-0.754430     1
+Name: count, Length: 5259, dtype: int64
+2026-08-08 12:34:32,476 - INFO - Tenure
+2026-08-08 12:34:32,476 - INFO - Tenure
+-1.694923    490
+ 2.667387    279
+-1.250242    190
+-1.095556    158
+-0.983573    135
+            ... 
+-0.016310     44
+ 0.366873     42
+ 0.180377     42
+ 0.244548     40
+-2.653301     11
+Name: count, Length: 73, dtype: int64
+2026-08-08 12:34:32,477 - INFO - MonthlyCharges
+2026-08-08 12:34:32,477 - INFO - MonthlyCharges
+-1.301191    42
+-1.381364    38
+-1.425011    37
+-1.471555    35
+-1.659093    34
+             ..
+ 1.615291     1
+ 2.113466     1
+ 1.757554     1
+ 1.659324     1
+-0.670269     1
+Name: count, Length: 1473, dtype: int64
+2026-08-08 12:34:32,478 - INFO - SeniorCitizen
+2026-08-08 12:34:32,480 - INFO - SeniorCitizen
+0    4732
+1     902
+Name: count, dtype: int64
+2026-08-08 12:34:32,481 - INFO - Partner
+2026-08-08 12:34:32,481 - INFO - Partner
+0    2903
+1    2731
+Name: count, dtype: int64
+2026-08-08 12:34:32,481 - INFO - Dependents
+2026-08-08 12:34:32,481 - INFO - Dependents
+0    3935
+1    1699
+Name: count, dtype: int64
+2026-08-08 12:34:32,481 - INFO - PaperlessBilling
+2026-08-08 12:34:32,482 - INFO - PaperlessBilling
+1    3332
+0    2302
+Name: count, dtype: int64
+2026-08-08 12:34:32,482 - INFO - MultipleLines_Yes
+2026-08-08 12:34:32,482 - INFO - MultipleLines_Yes
+0.0    3253
+1.0    2381
+Name: count, dtype: int64
+2026-08-08 12:34:32,483 - INFO - InternetService_Fiber optic
+2026-08-08 12:34:32,483 - INFO - InternetService_Fiber optic
+0.0    3159
+1.0    2475
+Name: count, dtype: int64
+2026-08-08 12:34:32,483 - INFO - InternetService_No
+2026-08-08 12:34:32,483 - INFO - InternetService_No
+0.0    4416
+1.0    1218
+Name: count, dtype: int64
+2026-08-08 12:34:32,484 - INFO - OnlineSecurity_No internet service
+2026-08-08 12:34:32,484 - INFO - OnlineSecurity_No internet service
+0.0    4416
+1.0    1218
+Name: count, dtype: int64
+2026-08-08 12:34:32,484 - INFO - OnlineSecurity_Yes
+2026-08-08 12:34:32,485 - INFO - OnlineSecurity_Yes
+0.0    4017
+1.0    1617
+Name: count, dtype: int64
+2026-08-08 12:34:32,485 - INFO - OnlineBackup_No internet service
+2026-08-08 12:34:32,486 - INFO - OnlineBackup_No internet service
+0.0    4416
+1.0    1218
+Name: count, dtype: int64
+2026-08-08 12:34:32,487 - INFO - OnlineBackup_Yes
+2026-08-08 12:34:32,487 - INFO - OnlineBackup_Yes
+0.0    3684
+1.0    1950
+Name: count, dtype: int64
+2026-08-08 12:34:32,487 - INFO - DeviceProtection_No internet service
+2026-08-08 12:34:32,488 - INFO - DeviceProtection_No internet service
+0.0    4416
+1.0    1218
+Name: count, dtype: int64
+2026-08-08 12:34:32,488 - INFO - DeviceProtection_Yes
+2026-08-08 12:34:32,488 - INFO - DeviceProtection_Yes
+0.0    3715
+1.0    1919
+Name: count, dtype: int64
+2026-08-08 12:34:32,489 - INFO - TechSupport_No internet service
+2026-08-08 12:34:32,489 - INFO - TechSupport_No internet service
+0.0    4416
+1.0    1218
+Name: count, dtype: int64
+2026-08-08 12:34:32,489 - INFO - TechSupport_Yes
+2026-08-08 12:34:32,490 - INFO - TechSupport_Yes
+0.0    3999
+1.0    1635
+Name: count, dtype: int64
+2026-08-08 12:34:32,490 - INFO - StreamingTV_No internet service
+2026-08-08 12:34:32,490 - INFO - StreamingTV_No internet service
+0.0    4416
+1.0    1218
+Name: count, dtype: int64
+2026-08-08 12:34:32,490 - INFO - StreamingTV_Yes
+2026-08-08 12:34:32,491 - INFO - StreamingTV_Yes
+0.0    3461
+1.0    2173
+Name: count, dtype: int64
+2026-08-08 12:34:32,491 - INFO - StreamingMovies_No internet service
+2026-08-08 12:34:32,491 - INFO - StreamingMovies_No internet service
+0.0    4416
+1.0    1218
+Name: count, dtype: int64
+2026-08-08 12:34:32,492 - INFO - StreamingMovies_Yes
+2026-08-08 12:34:32,492 - INFO - StreamingMovies_Yes
+0.0    3458
+1.0    2176
+Name: count, dtype: int64
+2026-08-08 12:34:32,492 - INFO - PaymentMethod_Credit card (automatic)
+2026-08-08 12:34:32,492 - INFO - PaymentMethod_Credit card (automatic)
+0.0    4431
+1.0    1203
+Name: count, dtype: int64
+2026-08-08 12:34:32,493 - INFO - PaymentMethod_Electronic check
+2026-08-08 12:34:32,493 - INFO - PaymentMethod_Electronic check
+0.0    3717
+1.0    1917
+Name: count, dtype: int64
+2026-08-08 12:34:32,493 - INFO - PaymentMethod_Mailed check
+2026-08-08 12:34:32,494 - INFO - PaymentMethod_Mailed check
+0.0    4338
+1.0    1296
+Name: count, dtype: int64
+2026-08-08 12:34:32,494 - INFO - SIM_BSNL
+2026-08-08 12:34:32,494 - INFO - SIM_BSNL
+0.0    4217
+1.0    1417
+Name: count, dtype: int64
+2026-08-08 12:34:32,495 - INFO - SIM_Jio
+2026-08-08 12:34:32,495 - INFO - SIM_Jio
+0.0    4246
+1.0    1388
+Name: count, dtype: int64
+2026-08-08 12:34:32,495 - INFO - SIM_Vodafone
+2026-08-08 12:34:32,495 - INFO - SIM_Vodafone
+0.0    4216
+1.0    1418
+Name: count, dtype: int64
+2026-08-08 12:34:32,496 - INFO - Contract_res
+2026-08-08 12:34:32,496 - INFO - Contract_res
+0.0    3123
+2.0    1338
+1.0    1173
+Name: count, dtype: int64
+2026-08-08 12:34:32,496 - INFO - Churn
+0    4118
+1    1516
+Name: count, dtype: int64
+2026-08-08 12:34:32,498 - INFO - Error occured due to <class 'ModuleNotFoundError'> and Error msg:No module named 'imblearn' in line 230

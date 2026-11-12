@@ -1,0 +1,267 @@
+2026-08-08 12:34:31,185 - INFO - Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'SIM'],
+      dtype='str')
+2026-08-08 12:34:31,185 - INFO - gender
+2026-08-08 12:34:31,187 - INFO - 2
+2026-08-08 12:34:31,189 - INFO - gender
+Male      737
+Female    672
+Name: count, dtype: int64
+2026-08-08 12:34:31,189 - INFO - SeniorCitizen
+2026-08-08 12:34:31,189 - INFO - 2
+2026-08-08 12:34:31,190 - INFO - SeniorCitizen
+No     1169
+Yes     240
+Name: count, dtype: int64
+2026-08-08 12:34:31,190 - INFO - Partner
+2026-08-08 12:34:31,190 - INFO - 2
+2026-08-08 12:34:31,191 - INFO - Partner
+No     738
+Yes    671
+Name: count, dtype: int64
+2026-08-08 12:34:31,191 - INFO - Dependents
+2026-08-08 12:34:31,191 - INFO - 2
+2026-08-08 12:34:31,191 - INFO - Dependents
+No     998
+Yes    411
+Name: count, dtype: int64
+2026-08-08 12:34:31,192 - INFO - PhoneService
+2026-08-08 12:34:31,192 - INFO - 2
+2026-08-08 12:34:31,192 - INFO - PhoneService
+Yes    1277
+No      132
+Name: count, dtype: int64
+2026-08-08 12:34:31,192 - INFO - MultipleLines
+2026-08-08 12:34:31,193 - INFO - 3
+2026-08-08 12:34:31,193 - INFO - MultipleLines
+No                  687
+Yes                 590
+No phone service    132
+Name: count, dtype: int64
+2026-08-08 12:34:31,193 - INFO - InternetService
+2026-08-08 12:34:31,194 - INFO - 3
+2026-08-08 12:34:31,194 - INFO - InternetService
+Fiber optic    621
+DSL            480
+No             308
+Name: count, dtype: int64
+2026-08-08 12:34:31,194 - INFO - OnlineSecurity
+2026-08-08 12:34:31,194 - INFO - 3
+2026-08-08 12:34:31,195 - INFO - OnlineSecurity
+No                     699
+Yes                    402
+No internet service    308
+Name: count, dtype: int64
+2026-08-08 12:34:31,195 - INFO - OnlineBackup
+2026-08-08 12:34:31,195 - INFO - 3
+2026-08-08 12:34:31,196 - INFO - OnlineBackup
+No                     622
+Yes                    479
+No internet service    308
+Name: count, dtype: int64
+2026-08-08 12:34:31,196 - INFO - DeviceProtection
+2026-08-08 12:34:31,196 - INFO - 3
+2026-08-08 12:34:31,196 - INFO - DeviceProtection
+No                     598
+Yes                    503
+No internet service    308
+Name: count, dtype: int64
+2026-08-08 12:34:31,197 - INFO - TechSupport
+2026-08-08 12:34:31,197 - INFO - 3
+2026-08-08 12:34:31,197 - INFO - TechSupport
+No                     692
+Yes                    409
+No internet service    308
+Name: count, dtype: int64
+2026-08-08 12:34:31,197 - INFO - StreamingTV
+2026-08-08 12:34:31,198 - INFO - 3
+2026-08-08 12:34:31,198 - INFO - StreamingTV
+No                     567
+Yes                    534
+No internet service    308
+Name: count, dtype: int64
+2026-08-08 12:34:31,198 - INFO - StreamingMovies
+2026-08-08 12:34:31,199 - INFO - 3
+2026-08-08 12:34:31,199 - INFO - StreamingMovies
+Yes                    556
+No                     545
+No internet service    308
+Name: count, dtype: int64
+2026-08-08 12:34:31,199 - INFO - Contract
+2026-08-08 12:34:31,199 - INFO - 3
+2026-08-08 12:34:31,200 - INFO - Contract
+Month-to-month    752
+Two year          357
+One year          300
+Name: count, dtype: int64
+2026-08-08 12:34:31,200 - INFO - PaperlessBilling
+2026-08-08 12:34:31,200 - INFO - 2
+2026-08-08 12:34:31,201 - INFO - PaperlessBilling
+Yes    839
+No     570
+Name: count, dtype: int64
+2026-08-08 12:34:31,201 - INFO - PaymentMethod
+2026-08-08 12:34:31,201 - INFO - 4
+2026-08-08 12:34:31,202 - INFO - PaymentMethod
+Electronic check             448
+Bank transfer (automatic)    326
+Credit card (automatic)      319
+Mailed check                 316
+Name: count, dtype: int64
+2026-08-08 12:34:31,202 - INFO - SIM
+2026-08-08 12:34:31,203 - INFO - 4
+2026-08-08 12:34:31,205 - INFO - SIM
+Jio         373
+Airtel      350
+BSNL        344
+Vodafone    342
+Name: count, dtype: int64
+2026-08-08 12:34:31,214 - INFO - gender
+2026-08-08 12:34:31,215 - INFO - int64
+2026-08-08 12:34:31,215 - INFO - SeniorCitizen
+2026-08-08 12:34:31,215 - INFO - int64
+2026-08-08 12:34:31,215 - INFO - Partner
+2026-08-08 12:34:31,215 - INFO - int64
+2026-08-08 12:34:31,215 - INFO - Dependents
+2026-08-08 12:34:31,215 - INFO - int64
+2026-08-08 12:34:31,215 - INFO - PhoneService
+2026-08-08 12:34:31,215 - INFO - int64
+2026-08-08 12:34:31,215 - INFO - MultipleLines
+2026-08-08 12:34:31,215 - INFO - str
+2026-08-08 12:34:31,215 - INFO - InternetService
+2026-08-08 12:34:31,215 - INFO - str
+2026-08-08 12:34:31,215 - INFO - OnlineSecurity
+2026-08-08 12:34:31,215 - INFO - str
+2026-08-08 12:34:31,215 - INFO - OnlineBackup
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - DeviceProtection
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - TechSupport
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - StreamingTV
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - StreamingMovies
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - Contract
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - PaperlessBilling
+2026-08-08 12:34:31,216 - INFO - int64
+2026-08-08 12:34:31,216 - INFO - PaymentMethod
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - SIM
+2026-08-08 12:34:31,216 - INFO - str
+2026-08-08 12:34:31,216 - INFO - Before One hot Encoding:
+2026-08-08 12:34:31,216 - INFO - =====Train Dataset======
+2026-08-08 12:34:31,217 - INFO - Training data shape is (5634, 17) : 
+ Training columns are: 
+Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'SIM'],
+      dtype='str')
+2026-08-08 12:34:31,217 - INFO - =====Test Dataset======
+2026-08-08 12:34:31,217 - INFO - Testing data shape is (1409, 17) : 
+ Testing columns are: 
+Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'SIM'],
+      dtype='str')
+2026-08-08 12:34:31,245 - INFO - After One hot Encoding:
+2026-08-08 12:34:31,245 - INFO - =====Train Dataset======
+2026-08-08 12:34:31,245 - INFO - Training data shape is (5634, 29) : 
+ Training columns are: 
+Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'Contract', 'PaperlessBilling', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SIM_BSNL', 'SIM_Jio', 'SIM_Vodafone'],
+      dtype='str')
+2026-08-08 12:34:31,245 - INFO - =====Test Dataset======
+2026-08-08 12:34:31,245 - INFO - Testing data shape is (1409, 29) : 
+ Testing columns are: 
+Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'Contract', 'PaperlessBilling', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SIM_BSNL', 'SIM_Jio', 'SIM_Vodafone'],
+      dtype='str')
+2026-08-08 12:34:31,256 - INFO - After Ordinal Encoding:
+2026-08-08 12:34:31,256 - INFO - =====Train Dataset======
+2026-08-08 12:34:31,257 - INFO - Training data shape is (5634, 29) : 
+ Training columns are: 
+Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'PaperlessBilling', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SIM_BSNL', 'SIM_Jio', 'SIM_Vodafone', 'Contract_res'],
+      dtype='str')
+2026-08-08 12:34:31,257 - INFO - =====Test Dataset======
+2026-08-08 12:34:31,257 - INFO - Testing data shape is (1409, 29) : 
+ Testing columns are: 
+Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'PaperlessBilling', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SIM_BSNL', 'SIM_Jio', 'SIM_Vodafone', 'Contract_res'],
+      dtype='str')
+2026-08-08 12:34:31,257 - INFO - Final Training Dataset
+2026-08-08 12:34:31,258 - INFO - Training data shape  is (5634, 29) : 
+ Training columns are: 
+Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService',
+       'PaperlessBilling', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SIM_BSNL', 'SIM_Jio', 'SIM_Vodafone', 'Contract_res'],
+      dtype='str')
+
+2026-08-08 12:34:31,259 - INFO -    gender  SeniorCitizen  Partner  Dependents  PhoneService  ...  PaymentMethod_Mailed check  SIM_BSNL  SIM_Jio  SIM_Vodafone  Contract_res
+0       1              0        1           1             1  ...                         0.0       0.0      1.0           0.0           0.0
+1       1              0        1           0             1  ...                         0.0       0.0      0.0           1.0           1.0
+2       1              0        0           0             1  ...                         0.0       1.0      0.0           0.0           0.0
+3       0              0        1           0             1  ...                         1.0       0.0      0.0           1.0           1.0
+4       1              0        1           1             0  ...                         0.0       0.0      0.0           1.0           0.0
+5       0              0        1           1             1  ...                         1.0       0.0      0.0           0.0           1.0
+6       1              1        1           0             1  ...                         0.0       0.0      0.0           0.0           0.0
+7       0              0        1           1             1  ...                         1.0       1.0      0.0           0.0           1.0
+8       0              1        0           0             1  ...                         0.0       1.0      0.0           0.0           0.0
+9       1              0        0           0             1  ...                         0.0       0.0      0.0           1.0           0.0
+
+[10 rows x 29 columns]

@@ -1,0 +1,87 @@
+2026-08-08 12:34:31,301 - INFO - Feature: gender, Chi2 Score: 0.8954061332744447, P-value: 0.3440164895442098
+2026-08-08 12:34:31,303 - INFO - Feature: SeniorCitizen, Chi2 Score: 109.36471073705209, P-value: 1.3501192375562325e-25
+2026-08-08 12:34:31,303 - INFO - Feature: Partner, Chi2 Score: 60.22698576705966, P-value: 8.452537110721224e-15
+2026-08-08 12:34:31,303 - INFO - Feature: Dependents, Chi2 Score: 109.36660810578697, P-value: 1.348827512344444e-25
+2026-08-08 12:34:31,303 - INFO - Feature: PhoneService, Chi2 Score: 0.12088693382181176, P-value: 0.7280745221269217
+2026-08-08 12:34:31,303 - INFO - Feature: PaperlessBilling, Chi2 Score: 88.2057668380611, P-value: 5.898768251550276e-21
+2026-08-08 12:34:31,303 - INFO - Feature: MultipleLines_No phone service, Chi2 Score: 1.1174348573638015, P-value: 0.2904714666799304
+2026-08-08 12:34:31,303 - INFO - Feature: MultipleLines_Yes, Chi2 Score: 7.769604985225645, P-value: 0.00531326669663502
+2026-08-08 12:34:31,304 - INFO - Feature: InternetService_Fiber optic, Chi2 Score: 320.5703352003402, P-value: 1.0881035484393333e-71
+2026-08-08 12:34:31,304 - INFO - Feature: InternetService_No, Chi2 Score: 230.02529990335475, P-value: 5.886065617555716e-52
+2026-08-08 12:34:31,304 - INFO - Feature: OnlineSecurity_No internet service, Chi2 Score: 230.02529990335475, P-value: 5.886065617555716e-52
+2026-08-08 12:34:31,304 - INFO - Feature: OnlineSecurity_Yes, Chi2 Score: 114.83505989933835, P-value: 8.552311123323879e-27
+2026-08-08 12:34:31,304 - INFO - Feature: OnlineBackup_No internet service, Chi2 Score: 230.02529990335475, P-value: 5.886065617555716e-52
+2026-08-08 12:34:31,304 - INFO - Feature: OnlineBackup_Yes, Chi2 Score: 23.387237740954795, P-value: 1.324543877677121e-06
+2026-08-08 12:34:31,304 - INFO - Feature: DeviceProtection_No internet service, Chi2 Score: 230.02529990335475, P-value: 5.886065617555716e-52
+2026-08-08 12:34:31,304 - INFO - Feature: DeviceProtection_Yes, Chi2 Score: 22.604454362448607, P-value: 1.9902264155986357e-06
+2026-08-08 12:34:31,304 - INFO - Feature: TechSupport_No internet service, Chi2 Score: 230.02529990335475, P-value: 5.886065617555716e-52
+2026-08-08 12:34:31,304 - INFO - Feature: TechSupport_Yes, Chi2 Score: 101.81973629142165, P-value: 6.0811248640750494e-24
+2026-08-08 12:34:31,304 - INFO - Feature: StreamingTV_No internet service, Chi2 Score: 230.02529990335475, P-value: 5.886065617555716e-52
+2026-08-08 12:34:31,304 - INFO - Feature: StreamingTV_Yes, Chi2 Score: 16.623360776941027, P-value: 4.5586067782748077e-05
+2026-08-08 12:34:31,305 - INFO - Feature: StreamingMovies_No internet service, Chi2 Score: 230.02529990335475, P-value: 5.886065617555716e-52
+2026-08-08 12:34:31,305 - INFO - Feature: StreamingMovies_Yes, Chi2 Score: 15.896204227538131, P-value: 6.691278012427232e-05
+2026-08-08 12:34:31,305 - INFO - Feature: PaymentMethod_Credit card (automatic), Chi2 Score: 81.3130239108819, P-value: 1.9265275659335387e-19
+2026-08-08 12:34:31,305 - INFO - Feature: PaymentMethod_Electronic check, Chi2 Score: 316.00828228993544, P-value: 1.0725081586774438e-70
+2026-08-08 12:34:31,305 - INFO - Feature: PaymentMethod_Mailed check, Chi2 Score: 36.70721691627337, P-value: 1.3727031881496484e-09
+2026-08-08 12:34:31,305 - INFO - Feature: SIM_BSNL, Chi2 Score: 0.018770716920705553, P-value: 0.8910258422751081
+2026-08-08 12:34:31,305 - INFO - Feature: SIM_Jio, Chi2 Score: 0.008065616066179868, P-value: 0.9284391749340801
+2026-08-08 12:34:31,305 - INFO - Feature: SIM_Vodafone, Chi2 Score: 0.07443718875623859, P-value: 0.784982516996902
+2026-08-08 12:34:31,305 - INFO - Feature: Contract_res, Chi2 Score: 898.4272379266343, P-value: 2.1563568785267208e-197
+2026-08-08 12:34:31,960 - INFO - Feature: gender, Mutual Information Score: 0.0
+2026-08-08 12:34:31,960 - INFO - Feature: SeniorCitizen, Mutual Information Score: 0.00713248278941947
+2026-08-08 12:34:31,960 - INFO - Feature: Partner, Mutual Information Score: 0.01011009453662326
+2026-08-08 12:34:31,960 - INFO - Feature: Dependents, Mutual Information Score: 0.019901908961627912
+2026-08-08 12:34:31,960 - INFO - Feature: PhoneService, Mutual Information Score: 0.006279266606747269
+2026-08-08 12:34:31,960 - INFO - Feature: PaperlessBilling, Mutual Information Score: 0.014812305394216407
+2026-08-08 12:34:31,960 - INFO - Feature: MultipleLines_No phone service, Mutual Information Score: 0.0
+2026-08-08 12:34:31,960 - INFO - Feature: MultipleLines_Yes, Mutual Information Score: 0.0010015536225964627
+2026-08-08 12:34:31,961 - INFO - Feature: InternetService_Fiber optic, Mutual Information Score: 0.04737329319338235
+2026-08-08 12:34:31,961 - INFO - Feature: InternetService_No, Mutual Information Score: 0.04048544335141613
+2026-08-08 12:34:31,961 - INFO - Feature: OnlineSecurity_No internet service, Mutual Information Score: 0.03475797720231655
+2026-08-08 12:34:31,961 - INFO - Feature: OnlineSecurity_Yes, Mutual Information Score: 0.012043236588437756
+2026-08-08 12:34:31,961 - INFO - Feature: OnlineBackup_No internet service, Mutual Information Score: 0.027862982680918025
+2026-08-08 12:34:31,961 - INFO - Feature: OnlineBackup_Yes, Mutual Information Score: 0.0
+2026-08-08 12:34:31,961 - INFO - Feature: DeviceProtection_No internet service, Mutual Information Score: 0.04416333018235408
+2026-08-08 12:34:31,961 - INFO - Feature: DeviceProtection_Yes, Mutual Information Score: 0.004112247532452429
+2026-08-08 12:34:31,961 - INFO - Feature: TechSupport_No internet service, Mutual Information Score: 0.030998214899869536
+2026-08-08 12:34:31,961 - INFO - Feature: TechSupport_Yes, Mutual Information Score: 0.011029711673555154
+2026-08-08 12:34:31,961 - INFO - Feature: StreamingTV_No internet service, Mutual Information Score: 0.034232041441093486
+2026-08-08 12:34:31,961 - INFO - Feature: StreamingTV_Yes, Mutual Information Score: 0.007246681491055451
+2026-08-08 12:34:31,962 - INFO - Feature: StreamingMovies_No internet service, Mutual Information Score: 0.032324485513052226
+2026-08-08 12:34:31,962 - INFO - Feature: StreamingMovies_Yes, Mutual Information Score: 0.0018238009515194609
+2026-08-08 12:34:31,962 - INFO - Feature: PaymentMethod_Credit card (automatic), Mutual Information Score: 0.0
+2026-08-08 12:34:31,962 - INFO - Feature: PaymentMethod_Electronic check, Mutual Information Score: 0.04367803422136274
+2026-08-08 12:34:31,962 - INFO - Feature: PaymentMethod_Mailed check, Mutual Information Score: 0.009142361123004372
+2026-08-08 12:34:31,962 - INFO - Feature: SIM_BSNL, Mutual Information Score: 0.004671317641078643
+2026-08-08 12:34:31,962 - INFO - Feature: SIM_Jio, Mutual Information Score: 0.0
+2026-08-08 12:34:31,962 - INFO - Feature: SIM_Vodafone, Mutual Information Score: 0.0023516369301448403
+2026-08-08 12:34:31,962 - INFO - Feature: Contract_res, Mutual Information Score: 0.09226128612998163
+2026-08-08 12:34:32,464 - INFO - Feature: gender, Importance: 0.05829088926656903
+2026-08-08 12:34:32,465 - INFO - Feature: SeniorCitizen, Importance: 0.042406714999110015
+2026-08-08 12:34:32,465 - INFO - Feature: Partner, Importance: 0.04694114351223569
+2026-08-08 12:34:32,465 - INFO - Feature: Dependents, Importance: 0.034925561723154364
+2026-08-08 12:34:32,465 - INFO - Feature: PhoneService, Importance: 0.008596428652323379
+2026-08-08 12:34:32,465 - INFO - Feature: PaperlessBilling, Importance: 0.04573544046812161
+2026-08-08 12:34:32,465 - INFO - Feature: MultipleLines_No phone service, Importance: 0.009191118324766562
+2026-08-08 12:34:32,465 - INFO - Feature: MultipleLines_Yes, Importance: 0.04772078584137817
+2026-08-08 12:34:32,465 - INFO - Feature: InternetService_Fiber optic, Importance: 0.055744084278854765
+2026-08-08 12:34:32,465 - INFO - Feature: InternetService_No, Importance: 0.009058502529311454
+2026-08-08 12:34:32,465 - INFO - Feature: OnlineSecurity_No internet service, Importance: 0.004924869267982185
+2026-08-08 12:34:32,465 - INFO - Feature: OnlineSecurity_Yes, Importance: 0.04760022489734532
+2026-08-08 12:34:32,465 - INFO - Feature: OnlineBackup_No internet service, Importance: 0.005309621597186906
+2026-08-08 12:34:32,465 - INFO - Feature: OnlineBackup_Yes, Importance: 0.04788852670576596
+2026-08-08 12:34:32,465 - INFO - Feature: DeviceProtection_No internet service, Importance: 0.004318237936764527
+2026-08-08 12:34:32,465 - INFO - Feature: DeviceProtection_Yes, Importance: 0.041057475865427115
+2026-08-08 12:34:32,465 - INFO - Feature: TechSupport_No internet service, Importance: 0.0027886361535952244
+2026-08-08 12:34:32,465 - INFO - Feature: TechSupport_Yes, Importance: 0.044171616704274295
+2026-08-08 12:34:32,465 - INFO - Feature: StreamingTV_No internet service, Importance: 0.006009305421391284
+2026-08-08 12:34:32,465 - INFO - Feature: StreamingTV_Yes, Importance: 0.04553325780104012
+2026-08-08 12:34:32,465 - INFO - Feature: StreamingMovies_No internet service, Importance: 0.008803562006105698
+2026-08-08 12:34:32,465 - INFO - Feature: StreamingMovies_Yes, Importance: 0.04489941561342928
+2026-08-08 12:34:32,465 - INFO - Feature: PaymentMethod_Credit card (automatic), Importance: 0.02588569974892887
+2026-08-08 12:34:32,465 - INFO - Feature: PaymentMethod_Electronic check, Importance: 0.049748917067044596
+2026-08-08 12:34:32,465 - INFO - Feature: PaymentMethod_Mailed check, Importance: 0.023477154865161016
+2026-08-08 12:34:32,465 - INFO - Feature: SIM_BSNL, Importance: 0.03837059444642513
+2026-08-08 12:34:32,466 - INFO - Feature: SIM_Jio, Importance: 0.039795144054944956
+2026-08-08 12:34:32,466 - INFO - Feature: SIM_Vodafone, Importance: 0.04094081297005439
+2026-08-08 12:34:32,466 - INFO - Feature: Contract_res, Importance: 0.11986625728130823

@@ -1,0 +1,19 @@
+2026-08-01 14:37:17,520 - INFO - The data shape of X_train is (5634, 21)
+2026-08-01 14:37:17,520 - INFO - The data shape of X_test is (1409, 11)
+2026-08-01 14:37:17,521 - INFO - The columns are:Index(['tenure', 'MonthlyCharges', 'TotalCharges', 'tenure_yeo_johnson',
+       'tenure_quantile', 'tenure_rank', 'MonthlyCharges_log',
+       'MonthlyCharges_reci', 'MonthlyCharges_sqrt', 'MonthlyCharges_exp',
+       'MonthlyCharges_boxcox', 'MonthlyCharges_yeo_johnson',
+       'MonthlyCharges_quantile', 'MonthlyCharges_rank', 'TotalCharges_log',
+       'TotalCharges_reci', 'TotalCharges_sqrt', 'TotalCharges_boxcox',
+       'TotalCharges_yeo_johnson', 'TotalCharges_quantile',
+       'TotalCharges_rank'],
+      dtype='str')
+2026-08-01 14:37:17,523 - INFO - The columns are:Index(['tenure', 'MonthlyCharges', 'TotalCharges', 'tenure_yeo_johnson',
+       'tenure_quantile', 'MonthlyCharges_boxcox',
+       'MonthlyCharges_yeo_johnson', 'MonthlyCharges_quantile',
+       'TotalCharges_boxcox', 'TotalCharges_yeo_johnson',
+       'TotalCharges_quantile'],
+      dtype='str')
+2026-08-01 14:37:17,578 - INFO - The shape of X_train is (5634, 3)
+2026-08-01 14:37:17,578 - INFO - The shape of X_test is (1409, 3)
